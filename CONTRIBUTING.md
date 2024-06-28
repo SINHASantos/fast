@@ -81,7 +81,7 @@ Packages are located within the `packages` folder of the repository. Each packag
 If you'd like to contribute by fixing a bug, implementing a feature, or even correcting typos in our documentation, you'll want to submit a pull request. Before submitting a pull request, be sure to [rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) your branch (typically from master) or use the *merge* button provided by GitHub.
 
 :::note
-For additional details on branch management, read the [branch guide](../community/branch-guide.md) documentation.
+For additional details on branch management, read the [branch guide](./BRANCH_GUIDE.md) documentation.
 :::
 
 #### Change Files
@@ -96,8 +96,8 @@ When working across feature branches, you'll need to target the branch using the
 ```json
 {
   "type": "minor",
-  "comment": "add fancy new feature for foundation",
-  "packageName": "@microsoft/fast-foundation",
+  "comment": "add fancy new feature to FASTElement",
+  "packageName": "@microsoft/fast-element",
   "email": "name@example.com",
   "dependentChangeType": "minor",
   "date": "2021-03-01T19:10:06.323Z"
@@ -118,11 +118,11 @@ If you are finding that your changes are either breaking changes or require mult
 
 ### Merging a pull request
 
-If you are merging a pull request, be sure to use the pull request title as the commit title. The title should follow the [conventional commit guidelines](https://www.conventionalcommits.org/). It is recommended that if you are merging in pull requests regularly that you add a browser extension that will auto-correct the title for you. A few that should do this are [Refined GitHub](https://github.com/sindresorhus/refined-github) and [Squashed Merge Message](https://github.com/zachwhaley/squashed-merge-message).
+If you are merging a pull request, be sure to use the pull request title as the commit title. The title should follow the [conventional commit guidelines](https://www.conventionalcommits.org/).
 
 ### Documenting breaking changes
 
-Make sure to document the migration strategy in a `MIGRATION.md` file in the package(s) that has breaking changes, eg. `packages/web-components/fast-foundation/MIGRATION.md`.
+Make sure to document the migration strategy in a `MIGRATION.md` file in the package(s) that has breaking changes, eg. `packages/web-components/fast-element/MIGRATION.md`.
 
 Example of how to format `MIGRATION.md`:
 
